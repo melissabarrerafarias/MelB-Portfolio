@@ -270,7 +270,7 @@ header nav ul li a:hover {
     }
 
     .h2-hero {
-        font-size: 10px;
+        font-size: 20px;
     }
 
 .title-section {
@@ -278,18 +278,53 @@ header nav ul li a:hover {
 }
 
 .grid-item {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: var(--hover-color);
     border: 2px solid;
+    margin: 5px;
 }
-    
 
+.box3 {
+    width: 500px;
+    height: 410px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(./assets/images/run-buddy-scr.png);
+}
+.grid-item h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-right: 60%;
+    padding: 20px;
+    text-align: left;
+}
 
+.grid-item h2 {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-top: 57%;
+    padding: 20px;
+    text-align: left;
+}
 
-    .contact-links {
+.contact-links {
         font-size: 35px;
     }
 
 
 }
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 575px)
