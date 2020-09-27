@@ -205,3 +205,55 @@ header nav ul li a:hover {
     background-color: var(--hover-color);
     border-radius: 15px;
 }
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .h2-hero {
+        font-size: 10px;
+    }
+
+.title-section {
+    font-size: 40px;
+}
+
+.grid-item {
+    width: 300px;
+    height: 400px;
+    background-color: var(--hover-color);
+    border: 2px solid;
+}
+    
+
+
+
+    .contact-links {
+        font-size: 35px;
+    }
+
+
+}
