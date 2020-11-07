@@ -181,6 +181,15 @@ header nav ul li a:hover {
     transition: 1s;
 }
 
+.box1 a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.box1 {
+    background-image: url(./assets/images/fly-high-1.png);
+}
+
 .box3 a {
     text-decoration: none;
     color: var(--accent-color);
