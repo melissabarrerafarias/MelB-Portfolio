@@ -1,0 +1,340 @@
+:root {
+    --main-color: #025002c2;
+    --accent-color: #1e2238;
+    --text-color-header: white;
+    --text-color: #000000;
+    --background-color: rgb(233, 233, 205);
+    --hover-color: #99939369;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* HEADER STYLES */
+
+header {
+    padding: 20px 20px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--text-color-header);
+    margin: 10px;
+}
+
+header a {
+    color:var(--text-color-header);
+    text-decoration: none;
+    text-shadow: 0 0 15px black;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: underline;
+    margin: 10px 35px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: var(--text-color-header);
+    text-shadow: 0 0 10px black;
+}
+
+header nav ul li a:hover {
+    background: var(--hover-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* END OF HEADER STYLES */
+
+/* HERO STYLES */
+.hero {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    max-width: 100%; 
+    display: block;
+}
+
+.container {
+    position: relative;
+}
+.h2-hero {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--hover-color);
+    color:var(--text-color-header);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 34px;
+    border-radius: 15px;
+}
+
+/* END OF HERO STYLES */
+
+/* ABOUT ME STYLES */
+
+.title-section {
+    color: var(--accent-color);
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 5px solid var(--accent-color);
+    border-top: 5px solid var(--accent-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 50%;
+}
+.about-me {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-position: 60%;
+}
+
+.description {
+    color: var(--text-color);
+    position: relative;
+    margin: 10px;
+}
+.description p {
+    font-size: 26px;
+    font-weight: normal;
+    max-width: 800px;
+    max-height: 700px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 3.5%;
+}
+
+.description img {
+    max-width: 800px;
+    max-height: 700px;
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-bottom: 3.5%;
+    border: 2px solid white;
+
+}
+
+
+/* ABOUT ME STYLES ENDS */
+
+/* WORK STYLES */
+
+.work-grid-wrapper {
+    display: flex;
+    width: 65%;
+}
+
+.work-grid-container {
+    display: grid;
+    max-width: 950px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    width: 400px;
+    height: 300px;
+    background-color: var(--hover-color);
+    border: 10px solid;
+    color: var(--text-color-header);
+}
+
+.grid-item:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.box1 a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.box1 {
+    background-image: url(./assets/images/fly-high-1.png);
+}
+
+.box3 a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.box3 {
+    width: 800px;
+    height: 610px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(./assets/images/run-buddy-scr.png);
+}
+
+.grid-item h1 {
+    font-size: 58px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-right: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.grid-item h2 {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-top: 47%;
+    margin-right: 60%;
+    padding: 20px;
+    text-align: right;
+
+
+}
+/* WORK STYLES ENDS */
+
+
+/* CONTACT LINK STYLES */
+
+.contact-links {
+    color: var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
+    padding: 40px;
+}
+
+.contact-links a {
+    text-decoration: underline var(--main-color);
+    color: var(--accent-color);
+}
+
+.contact-links a:hover {
+    background-color: var(--hover-color);
+    border-radius: 15px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .h2-hero {
+        font-size: 20px;
+    }
+
+.title-section {
+    font-size: 40px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    background-color: var(--hover-color);
+    border: 2px solid;
+    margin: 5px;
+}
+
+.box3 {
+    width: 500px;
+    height: 410px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(./assets/images/run-buddy-scr.png);
+}
+.grid-item h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-right: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-item h2 {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--accent-color);
+    margin-top: 57%;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-links {
+        font-size: 35px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 575px) {
+    
+}
+}
