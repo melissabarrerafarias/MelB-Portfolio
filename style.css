@@ -184,7 +184,7 @@ header nav ul li a:hover {
 .box1 a {
     text-decoration: none;
     color: var(--accent-color);
-}
+} 
 
 .box1 {
     background-image: url(./assets/images/fly-high-1.png);
