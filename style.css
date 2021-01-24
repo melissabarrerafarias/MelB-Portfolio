@@ -207,6 +207,15 @@ header nav ul li a:hover {
     background-image: url(./assets/images/run-buddy-scr.png);
 }
 
+.box4 a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.box4 {
+    background-image: url(./assets/images/stuckInside-application-screenshot.png);
+}
+
 .grid-item h1 {
     font-size: 58px;
     font-weight: bold;
@@ -219,7 +228,7 @@ header nav ul li a:hover {
 
 
 .grid-item h2 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     background-color: white;
     color: var(--accent-color);
